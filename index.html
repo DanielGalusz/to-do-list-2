@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Zadań</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista Zadań</h1>
+        
+        <div class="task-input-container">
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Dodaj nowe zadanie...">
+                <button class="add-task-button" onclick="addTask()">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="task-controls" style="display: none;">
+            <button id="hideCompletedButton" class="text-button" onclick="toggleHideCompleted()">Ukryj zrobione</button>
+            <button id="markAllDoneButton" class="text-button" onclick="markAllDone()">Zaznacz wszystkie jako zrobione</button>
+        </div>        
+        
+        <div class="task-list-container">
+            <ul id="taskList"></ul>
+        </div>
+
+    </div>
+</body>
+</html>
